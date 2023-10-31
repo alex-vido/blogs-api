@@ -1,5 +1,5 @@
 const UserSchema = (sequelize, DataTypes) => {
-  const UserTable = sequelize.define('User', {
+  const UserTable = sequelize.define('user', {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
@@ -10,17 +10,18 @@ const UserSchema = (sequelize, DataTypes) => {
     password: DataTypes.STRING(255),
     image: DataTypes.STRING(255),
   }, {
-    tableName: 'Users',
+    tableName: 'users',
     underscored: true
   });
 
-
+/*
   UserTable.associate = (models) => {
-    UserTable.belongsTo(models.Course, {
+    UserTable.belongsTo(models.blog_posts, {
       foreignKey: 'userId',
       as: 'user'
     });
   }
+*/
 
   return UserTable;
 }
