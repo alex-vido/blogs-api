@@ -11,7 +11,8 @@ const UserSchema = (sequelize, DataTypes) => {
     image: DataTypes.STRING(255),
   }, {
     tableName: 'users',
-    underscored: true
+    underscored: true,
+    timestamps : false,
   });
 
 /*
