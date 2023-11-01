@@ -18,6 +18,8 @@ app.use('/login', loginRoute);
 
 app.use('/user', userRoute);
 
+app.use('/user/:id', userRoute);
+
 // É importante exportar a constante `app`,
 // para que possa ser utilizada pelo arquivo `src/server.js`
 module.exports = app;

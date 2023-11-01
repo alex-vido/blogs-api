@@ -19,4 +19,10 @@ router.get(
   userController.getAllUsers,
 );
 
+router.get(
+  '/:id', 
+  tokenMiddleware.tokenIsValid,
+  userController.getUserById,
+);
+
 module.exports = router;
