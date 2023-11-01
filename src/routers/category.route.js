@@ -9,4 +9,10 @@ router.post(
   categoryController.createCategory,
 );
 
+router.get(
+  '/',
+  tokenMiddleware.tokenIsValid,
+  categoryController.getAllCategories,
+);
+
 module.exports = router;
