@@ -18,8 +18,12 @@ module.exports = {
           model: 'categories',
           key: 'id',
         },
-      },
-    });
+      },      
+    },
+    {
+      timestamps : false,
+    }
+    );
   },
 
   async down(queryInterface, Sequelize) {

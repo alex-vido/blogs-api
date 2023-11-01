@@ -1,5 +1,5 @@
-const UserSchema = (sequelize, DataTypes) => {
-  const UserTable = sequelize.define('Category', {
+const CategorySchema = (sequelize, DataTypes) => {
+  const CategoryTable = sequelize.define('Category', {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
@@ -15,7 +15,7 @@ const UserSchema = (sequelize, DataTypes) => {
       timestamps : false,
     });
 
-    return UserTable;
+    return CategoryTable;
   }
   
-  module.exports = UserSchema;
+  module.exports = CategorySchema;

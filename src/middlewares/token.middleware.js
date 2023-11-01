@@ -4,6 +4,7 @@ const SECRET_KEY = process.env.JWT_SECRET || 'secret';
 
 const tokenIsValid = (req, res, next) => {
   const { authorization } = req.headers;
+  console.log(req.headers);
   if (!authorization) {
     return res.status(401).json({ message: 'Token not found' });
   }

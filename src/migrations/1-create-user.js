@@ -1,7 +1,5 @@
 'use strict';
 
-const { TIMESTAMP } = require('mysql2/lib/constants/types');
-
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
