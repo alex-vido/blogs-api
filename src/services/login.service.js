@@ -1,9 +1,5 @@
-const jwt = require('jsonwebtoken');
+const generateToken = require('../utils/generateToken');
 const { User } = require('../models');
-
-const SECRET_KEY = process.env.JWT_SECRET || 'secret';
-
-const generateToken = (payload) => jwt.sign(payload, SECRET_KEY);
 
 const login = async (email, password) => {
   const user = await User.findOne({
