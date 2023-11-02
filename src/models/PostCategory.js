@@ -3,7 +3,7 @@ const PostCategorySchema = (sequelize, DataTypes) => {
     postId: DataTypes.INTEGER,
     categoryId: DataTypes.INTEGER,
   }, {
-    tableName: 'postCategories',
+    tableName: 'posts_categories',
     underscored: true,
     timestamps : false,
   });

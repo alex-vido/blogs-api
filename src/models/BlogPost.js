@@ -30,7 +30,7 @@ const BlogPostSchema = (sequelize, DataTypes) => {
         type: DataTypes.DATE,
       },
     }, {
-      tableName: 'blogPosts',
+      tableName: 'blog_posts',
       underscored: true,
       timestamps : false,
     });
