@@ -8,4 +8,10 @@ router.get(
   postController.getAllPosts,
 );
 
+router.get(
+  '/:id',
+  tokenMiddleware.tokenIsValid,
+  postController.getPost,
+);
+
 module.exports = router;

@@ -18,8 +18,6 @@ app.use('/login', loginRoute);
 
 app.use('/user', userRoute);
 
-app.use('/user/:id', userRoute);
-
 app.use('/categories', categoryRoute);
 
 app.use('/post', postRoute);
